@@ -9,6 +9,8 @@ private:
 	string m_name, m_description;
 	string m_color;
 
+	bool m_inventory;
+
 public:
 	virtual void examine();
 	virtual void open() ;

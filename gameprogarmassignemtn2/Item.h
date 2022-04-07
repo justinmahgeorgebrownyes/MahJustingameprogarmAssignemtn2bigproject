@@ -7,6 +7,8 @@ class Item :
 
 private:
   //  vector<Item*> m_items;
+    char ch;
+
 
 
 public: 
@@ -22,6 +24,24 @@ public:
         : Entity(name, description, "green")
     {
 
+
+        inFile.open(name, ios::in);
+        outFile.open(name, ios::out);
+
+        ch = inFile.peek();
+        while (ch != EOF)
+        {
+            // Examine current character
+                ch = inFile.get();
+                outFile << ch;
+            }
+            // Peek at the next character from input file
+            ch = inFile.peek();
+        }
+        // Close the files
+        inFile.close();
+        outFile.close();
+        return 0;
     }
 
 

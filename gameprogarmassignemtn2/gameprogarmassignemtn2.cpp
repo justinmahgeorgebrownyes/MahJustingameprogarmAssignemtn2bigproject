@@ -21,6 +21,9 @@ int main()
     roomsContainer.push_back((Room*)pLobby);
 
 
+    Item box, sofa, table, chair, lamb, phone,calculator, securityCamera,  ;
+
+
     std::cout << "Hello World!\n";
 }
 
