@@ -1,10 +1,26 @@
 // gameprogarmassignemtn2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include <vector>
+#include <string>
 #include <iostream>
-
+#include "Room.h"
+#include "Elevator.h"
+#include "Lobby.h"
+using namespace std;
 int main()
 {
+    vector<Room*> roomsContainer;
+
+    Elevator *pElevator = new Elevator();
+    pElevator->loadFile("Elevator.room");
+    roomsContainer.push_back((Room*)pElevator);
+
+
+    Lobby *pLobby= new Lobby();
+    pLobby->loadFile("Lobby.room");
+    roomsContainer.push_back((Room*)pLobby);
+
+
     std::cout << "Hello World!\n";
 }
 

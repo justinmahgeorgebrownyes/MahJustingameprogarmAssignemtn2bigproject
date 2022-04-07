@@ -139,17 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Elevator.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Furniture.cpp" />
     <ClCompile Include="gameprogarmassignemtn2.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Elevator.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Furniture.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Lobby.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Room.h" />
   </ItemGroup>
