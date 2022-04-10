@@ -37,7 +37,7 @@ void Room::loadFile(string fileName)
                 std::string token;
 
                 while (std::getline(ss, token, ',')) {
-                    m_verbssSTring.push_back(token);
+                    m_verbssString.push_back(token);
                 }
 
             }

@@ -6,7 +6,8 @@ class SomeCommands
 
 
 public:
-	string aCommand(string line);
-	void checkCommand();
+	string getVerb(string line);
+	string getNoun(string line);
+	void checkCommand(string linee, Room* currentRoom);
 };
 

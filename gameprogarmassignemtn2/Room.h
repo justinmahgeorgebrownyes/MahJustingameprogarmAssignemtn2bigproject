@@ -30,14 +30,17 @@ private:
     string m_detailedDescription;
     vector<Room*> m_connectedRooms;
     vector<Furniture*> m_furniture;
-    vector<string> m_verbssSTring;
-    vector<string> m_connectingRoomString;
-    vector<string> m_containedFurnituredSTrig;
-    vector<string> m_containedItemNameSTring;
+
+
+
+    //vector<string> m_connectingRoomString;
+    //vector<string> m_containedFurnituredSTrig;
+    //vector<string> m_containedItemNameSTring;
+
     vector<Item*> m_items;
+
+
     string m_contentDescription;
-
-
 
     string m_connectingRoom;
     string m_containedFurniture;
@@ -52,6 +55,57 @@ public:
         : Entity(name, description, "red"), m_detailedDescription(detailed_description), m_connectedRooms(rooms), m_furniture(furniture), m_items(items), m_contentDescription(content_description)
     {
         
+    }
+    void setconnectedRooms(vector<Room*> connectedRooms) {
+        m_connectedRooms = connectedRooms;
+    }
+    // Getter
+    vector<Room*>  getconnectedRooms() {
+        return m_connectedRooms;
+    }
+
+
+    void setContainedFurniture(vector<Furniture*> containedFurniture) {
+        m_furniture = containedFurniture;
+    }
+    // Getter
+    vector<Furniture*> getContainedFurniture() {
+        return m_furniture;
+    }
+
+
+    void setContainedItem(vector<Item*> containedItem) {
+        m_items = containedItem;
+    }
+    // Getter
+    vector<Item*> getContainedItem() {
+        return m_items;
+    }
+
+
+    void setRoom(string connectingRoom ) {
+        m_connectingRoom = connectingRoom;
+    }
+    // Getter
+    string getRoom() {
+        return m_connectingRoom;
+    }
+
+    void setFurniture(string containedFurniture) {
+        m_containedFurniture = containedFurniture;
+    }
+    // Getter
+    string getFurniture() {
+        return m_containedFurniture;
+    }
+
+
+    void setItemName(string itemName) {
+        m_containedItemName = itemName;
+    }
+    // Getter
+    string getItemName() {
+        return m_containedItemName;
     }
 
 
