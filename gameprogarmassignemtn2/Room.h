@@ -30,8 +30,18 @@ private:
     string m_detailedDescription;
     vector<Room*> m_connectedRooms;
     vector<Furniture*> m_furniture;
+    vector<string> m_verbssSTring;
+    vector<string> m_connectingRoomString;
+    vector<string> m_containedFurnituredSTrig;
+    vector<string> m_containedItemNameSTring;
     vector<Item*> m_items;
     string m_contentDescription;
+
+
+
+    string m_connectingRoom;
+    string m_containedFurniture;
+    string m_containedItemName;
 
 public:
 

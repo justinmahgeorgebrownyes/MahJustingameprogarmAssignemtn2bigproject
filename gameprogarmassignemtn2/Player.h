@@ -1,8 +1,13 @@
 #pragma once
 #include "Entity.h"
+#include "Item.h"
+#include <vector>
 class Player :
     public Entity
 {
+
+private:
+    vector<Item*> m_inventory;
 
 
 public:

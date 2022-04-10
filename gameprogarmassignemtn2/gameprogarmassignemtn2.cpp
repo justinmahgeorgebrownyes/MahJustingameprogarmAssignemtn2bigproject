@@ -21,6 +21,22 @@ int main()
     roomsContainer.push_back((Room*)pLobby);
 
 
+    Office* pOffice = new Office();
+    pLobby->loadFile("Office.room");
+    roomsContainer.push_back((Room*)pOffice);
+
+    HallWay* pHallway = new Hallyway();
+    pLobby->loadFile("Hallway.room");
+    roomsContainer.push_back((Room*)pHallway);
+
+    StorageRoom * pStorageRoom = new StorageRoom();
+    pLobby->loadFile("StorageRoom.room");
+    roomsContainer.push_back((Room*)pStorageRoom);
+
+    * pLobby = new Lobby();
+    pLobby->loadFile("Lobby.room");
+    roomsContainer.push_back((Room*)pLobby);
+
     Item box, sofa, table, chair, lamb, phone,calculator, securityCamera,  ;
 
 

@@ -140,29 +140,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ButtonPanel.cpp" />
+    <ClCompile Include="Door.cpp" />
     <ClCompile Include="Elevator.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="FilingCabinet.cpp" />
     <ClCompile Include="Furniture.cpp" />
     <ClCompile Include="gameprogarmassignemtn2.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemQueue.cpp" />
+    <ClCompile Include="ItemStack.cpp" />
     <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="MasterKey.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />
+    <ClCompile Include="SomeCommands.cpp" />
     <ClCompile Include="StickyNote.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ButtonPanel.h" />
+    <ClInclude Include="Door.h" />
     <ClInclude Include="Elevator.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FilingCabinet.h" />
     <ClInclude Include="Furniture.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemQueue.h" />
+    <ClInclude Include="ItemStack.h" />
     <ClInclude Include="Lobby.h" />
     <ClInclude Include="MasterKey.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="SomeCommands.h" />
     <ClInclude Include="StickyNote.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

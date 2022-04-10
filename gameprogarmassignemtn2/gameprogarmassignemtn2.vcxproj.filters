@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Furnitures">
       <UniqueIdentifier>{4fcf0ed6-c6a6-4144-91eb-cc9674567fec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\NewFilter1">
+      <UniqueIdentifier>{10571641-3cb0-4c49-8b03-91df633443aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gameprogarmassignemtn2.cpp">
@@ -60,6 +63,18 @@
     <ClCompile Include="MasterKey.cpp">
       <Filter>Source Files\Items</Filter>
     </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Source Files\Furnitures</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SomeCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h">
@@ -80,19 +95,31 @@
     <ClInclude Include="Elevator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lobby.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ButtonPanel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FilingCabinet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StickyNote.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MasterKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby.h">
+      <Filter>Source Files\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonPanel.h">
+      <Filter>Source Files\Furnitures</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Source Files\Furnitures</Filter>
+    </ClInclude>
+    <ClInclude Include="FilingCabinet.h">
+      <Filter>Source Files\Furnitures</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SomeCommands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
