@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ButtonPanel.cpp" />
+    <ClCompile Include="Closet.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="Elevator.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Furniture.cpp" />
     <ClCompile Include="gameprogarmassignemtn2.cpp" />
     <ClCompile Include="GuestingRoom.cpp" />
+    <ClCompile Include="HallWay.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemQueue.cpp" />
     <ClCompile Include="ItemStack.cpp" />
@@ -159,12 +161,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ButtonPanel.h" />
+    <ClInclude Include="Closet.h" />
     <ClInclude Include="Door.h" />
     <ClInclude Include="Elevator.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FilingCabinet.h" />
     <ClInclude Include="Furniture.h" />
     <ClInclude Include="GuestingRoom.h" />
+    <ClInclude Include="HallWay.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemQueue.h" />
     <ClInclude Include="ItemStack.h" />

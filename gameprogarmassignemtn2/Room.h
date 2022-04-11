@@ -5,6 +5,7 @@
 #include <string>
 #include "Entity.h"
 #include "Item.h"
+#include <map>
 #include "Furniture.h"
 using namespace std;
 class Room :
@@ -33,9 +34,9 @@ private:
 
 
 
-    //vector<string> m_connectingRoomString;
-    //vector<string> m_containedFurnituredSTrig;
-    //vector<string> m_containedItemNameSTring;
+    vector<string> m_connectingRoomString;
+    vector<string> m_containedFurnituredSTrig;
+    vector<string> m_containedItemNameSTring;
 
     vector<Item*> m_items;
 
@@ -56,6 +57,13 @@ public:
     {
         
     }
+
+    void loadFile(string fileName);
+
+    void fillConnectingRooms(map <string, Room*> &roomMap);
+
+
+
     void setconnectedRooms(vector<Room*> connectedRooms) {
         m_connectedRooms = connectedRooms;
     }
@@ -109,7 +117,7 @@ public:
     }
 
 
-    void loadFile(string fileName);
+   
 
 };
 

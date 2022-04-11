@@ -6,36 +6,56 @@
 #include "Room.h"
 #include "Elevator.h"
 #include "Lobby.h"
+#include <map>
+#include "GuestingRoom.h"
+#include "HallWay.h"
+#include "Closet.h"
 using namespace std;
 int main()
 {
     vector<Room*> roomsContainer;
 
+    map <string, Room*> roomMap;
+
+    
+    
+
+
     Elevator *pElevator = new Elevator();
     pElevator->loadFile("Elevator.room");
     roomsContainer.push_back((Room*)pElevator);
-
+    roomMap[pElevator->getName()] = (Room*)pElevator;
 
     Lobby *pLobby= new Lobby();
     pLobby->loadFile("Lobby.room");
     roomsContainer.push_back((Room*)pLobby);
+    roomMap[pLobby->getName()] = (Room*)pLobby;
 
 
-    Office* pOffice = new Office();
-    pLobby->loadFile("Office.room");
-    roomsContainer.push_back((Room*)pOffice);
+    HallWay* pHallWay = new HallWay();
+    pLobby->loadFile("HallWay.room");
+    roomsContainer.push_back((Room*)pHallWay);
+    roomMap[pHallWay->getName()] = (Room*)pHallWay;
 
-    HallWay* pHallway = new Hallyway();
-    pLobby->loadFile("Hallway.room");
-    roomsContainer.push_back((Room*)pHallway);
 
-    StorageRoom * pStorageRoom = new StorageRoom();
-    pLobby->loadFile("StorageRoom.room");
-    roomsContainer.push_back((Room*)pStorageRoom);
+    GuestingRoom* pGuestingRoom = new GuestingRoom();
+    pLobby->loadFile("GuestingRoom.room");
+    roomsContainer.push_back((Room*)pGuestingRoom);
+    roomMap[pGuestingRoom->getName()] = (Room*)pGuestingRoom;
 
-    * pLobby = new Lobby();
-    pLobby->loadFile("Lobby.room");
-    roomsContainer.push_back((Room*)pLobby);
+
+    Closet* pCloset = new Closet();
+    pCloset->loadFile("Closet.room");
+    roomsContainer.push_back((Room*)pCloset);
+    roomMap[pCloset->getName()] = (Room*)pCloset;
+
+    for (size_t i = 0; i < roomsContainer.size(); i++)
+    {
+        roomsContainer[i]->fillConnectingRooms(roomMap);
+        
+    }
+    
+
 
     Item box, sofa, table, chair, lamb, phone,calculator, securityCamera,  ;
 

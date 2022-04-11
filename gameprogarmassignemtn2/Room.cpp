@@ -2,6 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <map>
+
 void Room::loadFile(string fileName)
 {
     fstream inFile;
@@ -19,17 +21,17 @@ void Room::loadFile(string fileName)
         int temp = 0;
         while (getline(inFile, tp)) {  //read data from file object and put it into string.
             cout << tp << "\n";
-            
-            if(temp == 0) {
-                 m_name = tp;
-            } 
-            
+
+            if (temp == 0) {
+                m_name = tp;
+            }
+
             if (temp == 1) {
                 m_description = tp;
-            } 
-            
+            }
+
             if (temp == 2) {
-                
+
                 m_verb = tp;
 
 
@@ -79,11 +81,24 @@ void Room::loadFile(string fileName)
                 }
             }
 
-        //print the data of the string
+            //print the data of the string
 
 
 
             temp++;
-
+        }
+    }
 }
 
+void Room::fillConnectingRooms(map<string, Room*>&roomMap)
+{
+    for (int i = 0; i < m_connectingRoomString.size(); i++)
+    {
+        
+        m_connectedRooms.push_back(roomMap[m_connectingRoomString[i]]);
+
+        
+    }
+
+
+}
