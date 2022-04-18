@@ -55,6 +55,7 @@ int main()
         
     }
     
+    start game();
 
 
     Item box, sofa, table, chair, lamb, phone,calculator, securityCamera,  ;
@@ -62,6 +63,13 @@ int main()
 
     std::cout << "Hello World!\n";
 }
+
+class start game {
+
+    cout << "hello";
+
+};
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
